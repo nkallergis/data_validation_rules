@@ -1,6 +1,6 @@
 from nautobot_data_validation_engine.custom_validators import DataComplianceRule, ComplianceError
 
-class DeviceDataComplianceRules(DataComplianceRule):
+class MyDeviceDataComplianceRules(DataComplianceRule):
     model = "dcim.device"
     enforce = True
 
