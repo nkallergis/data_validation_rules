@@ -1,5 +1,5 @@
 import re
-rom nautobot.extras.models.tags import Tag
+from nautobot.extras.models.tags import Tag
 from nautobot_data_validation_engine.custom_validators import DataComplianceRule, ComplianceError
 
 class MyDeviceDataComplianceRules(DataComplianceRule):
