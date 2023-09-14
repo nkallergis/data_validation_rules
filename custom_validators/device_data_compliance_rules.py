@@ -2,7 +2,7 @@ import re
 from nautobot.extras.models.tags import Tag
 from nautobot_data_validation_engine.custom_validators import DataComplianceRule, ComplianceError
 
-class MyDeviceDataComplianceRules(DataComplianceRule):
+class DeviceDataComplianceRules(DataComplianceRule):
     model = "dcim.device"
     enforce = True
 
