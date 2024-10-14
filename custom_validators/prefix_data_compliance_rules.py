@@ -8,7 +8,7 @@ class PrefixDataComplianceRules(DataComplianceRule):
     # Checks whether the prefix mask is smaller than /16
     def audit_prefix_mask(self):
         if self.context["object"].prefix_length < 16:
-            raise ComplianceError({"prefix_length": "Prefix length cannot be less than 16."})
+            raise ComplianceError({"prefix": "Prefix length cannot be less than 16."})
 
     # Checks whether a prefix has been assigned to more than a single location
     def audit_prefix_locations(self):
